@@ -4,11 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
-  <link ref="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
   <title>Sign-up Form</title>
 </head>
 <body>
-  
+  <div class="sidebar">
+      <div class="sidebar__logo">
+        <img src="img/odin-lined.png" height="100">
+        <p>ODIN</p>
+      </div>
+      <p>Photo by Halie West on Unsplash</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content__header">This is not a real online service! You know you need something like this in
+      your life to help you realize your deepest dreams.<br>
+      Sign up <em>now</em> to get started!<br><br>
+      You <em>know</em> you want to.
+    </div>
+    <div class="content__form">
+      <p>Let's do this!</p>
+      <form id="new_account" action="index.html" method="post">
+        <div class="content__form__input">
+          <label for="user_first-name">FIRST NAME</label>
+          <input type="text" id="user_first-name" required>
+        </div>
+        <div class="content__form__input">
+          <label for="user_first-name">LAST NAME</label>
+          <input type="text" id="user_last-name" required>
+        </div>
+        <div class="content__form__input">
+          <label for="user_email">E-MAIL</label>
+          <input type="email" id="user_email" required>
+        </div>
+        <div class="content__form__input">
+          <label for="user_phone-number">PHONE NUMBER</label>
+          <input type="tel" id="user_phone-number" required>
+        </div>
+        <div class="content__form__input">
+          <label for="user_password">PASSWORD</label>
+          <input type="password" id="user_password" required class="error">
+        </div>
+        <div class="content__form__input">
+          <label for="user_retyped-password">CONFIRM PASSWORD</label>
+          <input type="password" id="user_retyped-password" required class="error">
+          <span class="error" id="error" aria-live="polite">* Please make sure the passwords are matching.</span>
+        </div>
+      </form>
+    </div>
+    <div class="content__footer">
+      <button type="submit" form="new_account">Create Account</button>
+      <p>Already have an account? <a href="index.html">Log in</a></p>
+    </div>
+  </div>
 </body>
 </html>

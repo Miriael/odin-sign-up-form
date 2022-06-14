@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+.sidebar {
+  width: 40vw;
+  height: 100vh;
+  background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar p {
+  color: white;
+}
+
+.sidebar__logo {
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 130px;
+}
+
+.sidebar__logo p {
+  font-family: Norse-Bold;
+  font-size: 70px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 241, 241);
+}
+
+.content__header {
+  padding: 100px 100px 40px 30px;;
+  font-size:20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content__form {
+  background-color: white;
+  box-shadow: 5px 5px 5px lightgrey;
+  padding: 10px 150px 10px 60px;
+  margin-bottom: 30px;
+}
+
+.content__form p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.content__form__input {
+  display:flex;
+  flex-direction: column;
+}
+
+.content__footer {
+  margin-left: 30px;
+}
+
+button {
+  height: 50px;
+  width: 250px;
+  background-color: darkolivegreen;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content__footer p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  height: 30px;
+  width: 40ch;
+}
+
+input:hover {
+  outline: blue solid 1px;
+}
+
+input:focus {
+  outline: blue solid 2px;
+  box-shadow: 8px 8px 10px lightgray
+}
+
+input.error {
+  outline: red solid 1px;
+}
+
+input.error:focus {
+  outline: red solid 2px;
+}
+
+span.error {
+  margin-top: 5px;
+  color: red;
+}
